@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dobrogea intre natura si om</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Dobrogea intre natura si om</h1>
+            <p class="subtitle">Peisaje antropice ale Dobrogei</p>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <button class="nav-btn active" data-page="home">Acasă</button>
+        <button class="nav-btn" data-page="agricole">Peisaje Agricole</button>
+        <button class="nav-btn" data-page="industriale">Peisaje Industriale și Urbane</button>
+        <button class="nav-btn" data-page="importanta">Importanța peisajelor antropice</button>
+        <button class="nav-btn" data-page="surse">Surse</button>
+    </nav>
+
+    <main class="container">
+        <!-- PAGINA ACASĂ -->
+        <section id="home" class="page active">
+            <div class="content-section">
+                <h2>Bine ai venit în Dobrogea!</h2>
+                <p>
+                    Peisajele antropice din Dobrogea s-au format ca un răspuns direct la nevoia omului de a domina un teritoriu marcat de contraste, unde stepa aridă întâlnește fluviul și marea. Modul în care aceste peisaje sunt create presupune o succesiune de intervenții tehnice masive, începând cu decopertarea stratului vegetal și dislocarea rocilor pentru exploatări miniere, continuând cu excavarea unor volume uriașe de pământ pentru canalele de navigație și culminând cu instalarea unor structuri metalice gigantice pentru producția de energie. Aceste transformări nu sunt doar estetice, ci reprezintă o reinginerie a reliefului, unde pantele naturale sunt terasate pentru viticultură, iar cursurile de apă sunt deviate sau captate în bazine artificiale pentru a susține agricultura într-o zonă altfel deficitară în precipitații.
+                </p>
+                <div class="info-box">
+                    <h3>Ce sunt peisajele antropice?</h3>
+                    <p>
+                        Peisajele antropice sunt peisaje create sau puternic modificate de om prin activitățile sale.
+                        În Dobrogea, acestea s-au format ca urmare a agriculturii pe suprafețe întinse, a dezvoltării așezărilor, a porturilor și a turismului litoral, dar și a valorificării resurselor naturale. Ele reflectă adaptarea omului la clima aridă, relieful de podiș și poziția strategică dintre Dunăre și Marea Neagră, definind identitatea geografică și economică a regiunii.
+                    </p>
+                </div>
+                <div class="features">
+                    <button class="feature feature-btn" onclick="navigateToPage('agricole')">
+                        <h4>Agricultura</h4>
+                        <p>Culturi extinse și tradiționale</p>
+                    </button>
+                    <button class="feature feature-btn" onclick="navigateToPage('industriale')">
+                        <h4>Industrie și Dezvoltare Urbană</h4>
+                        <p>Port, industrie și orașe în dezvoltare</p>
+                    </button>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- PAGINA PEISAJE AGRICOLE -->
+        <section id="agricole" class="page">
+            <div class="content-section">
+                <h2>Peisaje Agricole</h2>
+                <p>
+                    Peisajele agricole din Dobrogea sunt rezultatul transformării stepelor naturale în terenuri cultivate: câmpuri de cereale, plantații, ferme și sisteme de irigație. Aceste peisaje sunt vitale pentru economie și pentru asigurarea securității alimentare regionale, sprijinind comunitățile rurale și practicile tradiționale.
+                </p>
+
+                <div class="info-box">
+                    <h3>Cum se formează peisajele agricole</h3>
+                    <p>
+                        Procesul include mai mulți pași practici, pe scurt:
+                    </p>
+                    <ul>
+                        <li><strong>Evaluare și modelare:</strong> analiza solului și a reliefului; terasare sau nivelare acolo unde e necesar.</li>
+                        <li><strong>Pregătirea terenului:</strong> curățare, arat, îmbunătățirea solului și trasarea parcelor.</li>
+                        <li><strong>Infrastructură:</strong> instalarea sistemelor de irigații/drenaj, drumuri de acces și elemente de protecție (benzi forestiere, terase).</li>
+                        <li><strong>Gestionare agronomică:</strong> plantare, rotație de culturi, mecanizare și aplicarea unor practici durabile (conservarea solului, IPM).</li>
+                    </ul>
+                    <p>
+                        Textul rămâne scurt și clar, potrivit pentru o informare rapidă.
+                    </p>
+                </div>
+
+                <div class="agricole-sections">
+                    <article class="agricole-section">
+                        <img src="images/agricole1.jpg.webp" alt="Câmp cultivat" class="img-uniform" loading="lazy">
+                        <div class="agricole-text">
+                            <h3>Camp antropic agricol</h3>
+                           
+                        </div>
+                    </article>
+
+                    <article class="agricole-section">
+                        <img src="images/irigatii.jpg.webp" alt="Sistem de irigație" class="img-uniform" loading="lazy">
+                        <div class="agricole-text">
+                            <h3>Sistem de irigație</h3>
+                           
+                        </div>
+                    </article>
+
+                    <article class="agricole-section">
+                        <img src="images/terenuri.jpeg.webp" alt="Vedere agricolă (svg)" class="img-uniform" loading="lazy">
+                        <div class="agricole-text">
+                            <h3>Agricultura in Dobrogea</h3>
+                            
+                        </div>
+                    </article>
+                </div>
+
+                <div class="info-box">
+                    <h3>Impactul agriculturii</h3>
+                    <p>
+                        Agricultura în Dobrogea a transformat ecosistemele naturale, convertind stepele și 
+                        pădurile în terenuri cultivate. Această transformare are efecte multiple, atât pozitive, 
+                        cât și negative:
+                    </p>
+                    <ul>
+                        <li><strong>Beneficii:</strong> asigură securitate alimentară, creează locuri de muncă, susține economia locală și păstrează unele peisaje culturale tradiționale.</li>
+                        <li><strong>Efecte negative:</strong> pierderea biodiversității și a habitatelor native, eroziune și degradare a solului, salinizare în zone irigate, consum ridicat de apă, poluare prin pesticide și fertilizanți, emisie de gaze cu efect de seră și fragmentarea peisajului.</li>
+                        <li><strong>Măsuri de atenuare:</strong> practici agricole durabile (rotirea culturilor, agricultura de conservare, agroecologie), gestionarea eficientă a irigațiilor, reducerea și înlocuirea substanțelor chimice cu metode integrate de combatere a dăunătorilor și restaurarea zonelor naturale pentru a conserva biodiversitatea.</li>
+                    </ul>
+                </div>
+
+                <div class="section-bottom-gallery">
+                    <div class="gallery-item">
+                        <img src="images/campagr.webp" alt="Irigatii moderne" class="img-uniform" loading="lazy">
+                        
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/irigatiimod.webp" alt="Terase agricole" class="img-uniform" loading="lazy">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/teraseagricole.webp" alt="Ferme si silozuri" class="img-uniform" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGINA PEISAJE INDUSTRIALE ȘI URBANE -->
+        <section id="industriale" class="page">
+            <div class="content-section">
+                <h2>Peisaje Antropice Industriale și Urbane</h2>
+                <p>
+                    Peisajele industriale și urbane din Dobrogea includ porturi, rafinării, centrale energetice, parcuri industriale și așezări urbane. Aceste transformări au condus la creștere economică, crearea de locuri de muncă, dezvoltarea infrastructurii și transfer tehnologic. Beneficiile concrete includ acces la energie, conectivitate comercială, servicii medicale și educaționale îmbunătățite și oportunități pentru afaceri locale.
+                </p>
+                
+
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <img src="images/download.jpg.webp" alt="Loc pentru imagine 1" class="img-uniform" loading="lazy">
+                        <h3>Porturi si avtivitati maritime</h3>
+                        
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="images/Rafinari.jpg.webp" alt="Loc pentru imagine 2" class="img-uniform" loading="lazy">
+                        <h3>Rafinării și facilități industriale</h3>
+                        
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="images/Urbane.webp" alt="Loc pentru imagine 3" class="img-uniform" loading="lazy">
+                        <h3>Dezvoltare urbană și infrastructură</h3>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="images/eoliene.webp" alt="Loc pentru imagine 4" class="img-uniform" loading="lazy">
+                        <h3>Parc eolian</h3>
+                    </div>
+                </div>
+
+                <div class="info-box">
+                    <h3>Peisaje antropice industriale</h3>
+                    <p>
+                        Sunt dominate de infrastructuri industriale (porturi, rafinării, hale, parcuri industriale) și de rețele logistice. Aceste zone susțin economia prin producție și transport, dar implică și provocări de mediu (poluare, apă și sol contaminate, suprafețe impermeabile).
+                    </p>
+                    <ul>
+                        <li><strong>Caracteristici:</strong> zone funcționale, depozite, utilități grele și acces rutier/feroviar.</li>
+                        <li><strong>Provocări:</strong> gestionarea deșeurilor, poluarea și reconversia zonelor industriale.</li>
+                    </ul>
+                </div>
+
+                <div class="info-box">
+                    <h3>Peisaje antropice urbane</h3>
+                    <p>
+                        Zonele urbane combină locuințe, servicii, comerț și infrastructură; ele modelează relieful prin densificare, rețele de transport și zone verzi planificate pentru a îmbunătăți calitatea vieții și mobilitatea.
+                    </p>
+                    <ul>
+                        <li><strong>Caracteristici:</strong> clădiri dense, străzi, spații publice și utilități.</li>
+                        <li><strong>Soluții:</strong> planificare urbană durabilă, spații verzi, transport alternativ și eficiență energetică.</li>
+                    </ul>
+                </div>
+
+                <div class="info-box">
+                    <h3>Transformarea urbană</h3>
+                    <p>
+                        Industrializarea din Dobrogea a accelerat urbanizarea și a atras migranți din alte regiuni. 
+                        Aceste schimbări au remodelat peisajul tradițional, introducând construcții moderne,
+                        rețele de infrastructură complexe și zone de locuințe dense. Efectele includ creșterea
+                        economică, dar și provocări de mediu și de calitate a vieții.
+                    </p>
+                    <ul>
+                        <li><strong>Efecte sociale:</strong> extinderea serviciilor și a locurilor de muncă, presiune pe locuințe și infrastructură publică.</li>
+                        <li><strong>Provocări de mediu:</strong> creșterea traficului, poluarea aerului și fonică, impermeabilizarea solurilor și pierderea spațiilor verzi.</li>
+                        <li><strong>Soluții practice:</strong> planificare urbană durabilă, regenerare urbană, reabilitarea clădirilor, transport public eficient și crearea de spații verzi pentru a îmbunătăți calitatea vieții.</li>
+                    </ul>
+                    <p>
+                        Implicarea comunității și politici integrate de dezvoltare sunt esențiale pentru un echilibru între creștere și mediu.
+                    </p>
+                </div>
+
+                <div class="section-bottom-gallery">
+                    <div class="gallery-item">
+                        <img src="images/urbane2.webp" alt="Porturi moderne" class="img-uniform" loading="lazy">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/parcind.webp" alt="Parcuri industriale" class="img-uniform" loading="lazy">
+                        
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/panou.webp" alt="Reabilitare zone industriale" class="img-uniform" loading="lazy">
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGINA IMPORTANȚA PEISAJELOR ANTROPICE -->
+        <section id="importanta" class="page">
+            <div class="content-section">
+                <h2>Importanța peisajelor antropice</h2>
+                <p>
+                    Importanța peisajelor antropice (cele create sau modificate de om) este imensă, deoarece ele reprezintă „scena” pe care se desfășoară întreaga noastră viață modernă. În Dobrogea, acest lucru este vizibil la fiecare pas, de la porturile gigantice până la câmpurile de eoliene.
+
+Iată principalele motive pentru care aceste peisaje sunt esențiale:
+
+<li>1. Susținerea vieții și a economiei
+Peisajele antropice nu sunt doar decoruri, ci unități de producție.
+
+Agricultura: Câmpurile cultivate din Podișul Dobrogei transformă stepa aridă în sursă de hrană. Fără aceste peisaje modificate (irigații, terasări), regiunea nu ar putea susține populația actuală.
+
+Energia: Parcurile eoliene și centrala de la Cernavodă sunt peisaje tehnologice care asigură independența energetică.</li>
+
+<li>2. Conectivitate și comerț
+Omul a modificat relieful pentru a putea circula mai repede. Canalul Dunăre-Marea Neagră este cel mai bun exemplu de peisaj antropic radical: un „fluviu artificial” care a scurtat drumul spre mare și a transformat economia întregii țări. Portul Constanța este, de asemenea, un peisaj câștigat în fața mării, esențial pentru schimburi comerciale internaționale.</li>
+
+<li>3. Identitate culturală și istorică
+Unele peisaje antropice devin parte din patrimoniul nostru. Cetățile antice (cum e Histria) sau satele tradiționale dobrogene cu case văruite în alb și albastru sunt tot intervenții umane. Ele ne spun povestea adaptării omului la condițiile aspre de mediu de-a lungul secolelor.</li>
+
+<li>4. Managementul resurselor
+Peisajele antropice ne permit să gestionăm apa și solul. În Dobrogea, unde seceta este o problemă constantă, peisajele care includ bazine de retenție sau canale de irigații sunt vitale pentru supraviețuirea ecosistemelor (chiar și a celor parțial naturale).</li>
+                </p>
+
+                <div class="slideshow-container">
+                    <div class="slide fade">
+                        <h3>1. Producția alimentară</h3>
+                        <div class="slide-content">
+                            <div class="slide-image">Producție</div>
+                            <p>
+                                Agricultura din Dobrogea produce cereale, plante tehnice și furaje care susțin hrana locală și exporturile. Tehnici de îmbunătățire a randamentului (ternață, irigații eficiente, rotație de culturi) contribuie la stabilitate și productivitate.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="slide fade">
+                        <h3>2. Dezvoltarea economică</h3>
+                        <div class="slide-content">
+                            <div class="slide-text">
+                                <p>
+                                    Porturile, industria și serviciile creează lanțuri de valoare și locuri de muncă, atrăgând investiții. Diversificarea activităților economice (procesare alimentară, logistică, turism) crește reziliența regiunii.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide fade">
+                        <h3>3. Locuire și dezvoltare socială</h3>
+                        <div class="slide-content">
+                            <div class="slide-text">
+                                <p>
+                                    Orașele oferă locuințe, educație și sănătate, dar pot genera presiune pe infrastructură și servicii publice. Calitatea vieții depinde de planificare, acces la servicii și incluziune socială.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide fade">
+                        <h3>4. Conectivitate și transport</h3>
+                        <div class="slide-content">
+                            <div class="slide-text">
+                                <p>
+                                    Rețelele de transport (porturi, drumuri, căi ferate) facilitează comerțul și mobilitatea forței de muncă. Planificarea infrastructurii reduce costurile logistice și impactul asupra mediului prin rute eficiente și intermodalitate.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide fade">
+                        <h3>5. Biodiversitate</h3>
+                        <div class="slide-content">
+                            <div class="slide-image">Biodiversitate</div>
+                            <p>
+                                Transformările umane au redus habitate naturale și fragmentat peisajul, afectând speciile locale. Măsurile de protecție (coridoare verzi, restaurare, practici agricole prietenoase cu mediul) sunt esențiale pentru conservarea biodiversității.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="slide-controls">
+                        <button class="prev-slide">Anterior</button>
+                        <span class="slide-counter"><span class="current-slide">1</span> / <span class="total-slides">5</span></span>
+                        <button class="next-slide">Următor</button>
+                    </div>
+                </div>
+
+                <div class="info-box">
+                    <h3>Cum se formează peisajele antropice?</h3>
+                    <ol>
+                        <li><strong>Intenția umană:</strong> Dorința de a hrăni populație, a dezvolta economie</li>
+                        <li><strong>Modificări sistematice:</strong> Tăierea pădurilor, ararea terenurilor, construcția de infrastructură</li>
+                        <li><strong>Managementul activ:</strong> Irigația, fertilizanți, mecanizare agricolă, transport industrial</li>
+                        <li><strong>Integrazione ecologică:</strong> Noi ecosisteme se dezvoltă, adaptate la noile condiții</li>
+                        <li><strong>Rezultat final:</strong> Peisaje complexe care furnizează servicii ecosistemice, dar cu costuri ambientale</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGINA SURSE -->
+        <section id="surse" class="page">
+            <div class="content-section">
+                <h2>Surse și Referințe</h2>
+                <p>
+                    Următoarele resurse au fost folosite în elaborarea acestui site și oferă 
+                    informații suplimentare despre peisajele antropice și Dobrogea:
+                </p>
+
+                <div class="sources-list">
+                    <h3>Surse informative</h3>
+                    <div class="source-item">
+                        <h4>Geografia Dobrogei</h4>
+                        <ul>
+                            <li><a href="https://www.wikipedia.org/wiki/Dobrogea" target="_blank">Wikipedia - Dobrogea</a></li>
+                            <li><a href="https://www.google.com/maps/place/Dobrogea/@44.2/29.0/zoom=8" target="_blank">Google Maps - Dobrogea</a></li>
+                            <li><a href="https://www.agro.ro" target="_blank">Agronet - Informații agricole</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="source-item">
+                        <h4>Peisaje Antropice și Mediu</h4>
+                        <ul>
+                            <li><a href="https://www.eea.europa.eu" target="_blank">Agenția Europeană de Mediu (EEA)</a></li>
+                            <li><a href="https://www.brainyplanet.com" target="_blank">Brainy Planet - Peisaje planetare</a></li>
+                            <li><a href="https://www.un.org/sustainabledevelopment" target="_blank">ONU - Obiective de Dezvoltare Durabilă</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="source-item">
+                        <h4>Porturi și Industrie</h4>
+                        <ul>
+                            <li><a href="https://www.portofconstanta.com" target="_blank">Portul Constanța - Site oficial</a></li>
+                            <li><a href="https://www.constanta.ro" target="_blank">Primăria Constanța</a></li>
+                            <li><a href="https://ec.europa.eu/maritimeaffairs" target="_blank">Comisia Europeană - Afaceri Maritime</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="source-item">
+                        <h4>Resurse educative</h4>
+                        <ul>
+                            <li><a href="https://www.nationalgeographic.com" target="_blank">National Geographic</a></li>
+                            <li><a href="https://www.scientificamerican.com" target="_blank">Scientific American</a></li>
+                            <li><a href="https://www.ted.com" target="_blank">TED Talks - Conținut educativ și inspirator</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="source-item">
+                        <h4>Imagini și multimedia</h4>
+                        <ul>
+                            <li><a href="https://unsplash.com" target="_blank">Unsplash - Imagini libere</a></li>
+                            <li><a href="https://pexels.com" target="_blank">Pexels - Imagini și videoclipuri gratuite</a></li>
+                            <li><a href="https://pixabay.com" target="_blank">Pixabay - Conținut multimedia liber</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="source-item">
+                        <h4>Referințe suplimentare</h4>
+                        <ul>
+                            <li><a href="https://www.madr.ro" target="_blank">Ministerul Agriculturii și Dezvoltării Rurale (MADR)</a></li>
+                            <li><a href="https://www.inmh.ro" target="_blank">Institutul Național de Hidrologie și Meteorologie</a></li>
+                            <li><a href="https://insse.ro" target="_blank">Institutul Național de Statistică (INS)</a></li>
+                            <li><a href="https://www.eea.europa.eu" target="_blank">Agenția Europeană de Mediu (EEA)</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="source-item">
+                        <h4>Resurse pentru agricultură și mediu</h4>
+                        <ul>
+                            <li><a href="https://www.fao.org" target="_blank">FAO - Food and Agriculture Organization</a></li>
+                            <li><a href="https://ec.europa.eu/info/food-farming-fisheries_en" target="_blank">European Commission - Agricultură și politici agricole (DG AGRI)</a></li>
+                            <li><a href="https://ec.europa.eu/eurostat" target="_blank">Eurostat - Date statistice (utilizare a terenurilor, producție agricolă)</a></li>
+                            <li><a href="https://www.worldbank.org" target="_blank">World Bank - Programe și studii despre agricultură și dezvoltare rurală</a></li>
+                            <li><a href="https://www.wwf.ro" target="_blank">WWF România - Resurse despre biodiversitate și conservare</a></li>
+                            <li><a href="https://www.mmediu.gov.ro" target="_blank">Ministerul Mediului - Politici și reglementări naționale</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="info-box">
+                    <h3>⚖️ Licență și atribuiri</h3>
+                    <p>
+                        Acest site a fost creat în scop educativ. Imagini și conținut multimedia 
+                        sunt din surse gratuite și libere de drepturi de autor, sau sunt utilizate 
+                        sub licență Creative Commons cu atribuire corespunzătoare.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Dobrogea intre natura si om. Creat pentru scopuri educative.</p>
+        <p>Explorează peisajele antropice ale Dobrogei și înțelege transformarea mediului.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
